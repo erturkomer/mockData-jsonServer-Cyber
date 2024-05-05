@@ -1,8 +1,3 @@
-# React + Vite
+#mockData-jsonServer-Cyber
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+https://github.com/erturkomer/mockData-jsonServer-Cyber/assets/134015689/e2e73195-9950-4dd4-b827-da0b75044a9b

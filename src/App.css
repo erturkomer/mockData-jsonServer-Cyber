@@ -1,0 +1,611 @@
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SF Pro Display';
+}
+
+body {
+    min-height: 100vh;
+}
+
+/* HEADER START */
+
+.header-bar {
+    width: 100%;
+    height: 88px;
+    border-bottom: 1px solid #B5B5B5;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.search-box {
+    width: 372px;
+    height: 56px;
+    border-radius: 8px;
+    padding: 16px;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    background: #F5F5F5;
+}
+
+.search-box input {
+    outline: none;
+    border: 0;
+    background: #F5F5F5;
+    width: 300px;
+}
+
+.navigation ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 351px;
+    height: 19px;
+}
+
+.navigation ul li {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 30%;
+}
+
+.navigation ul li:nth-child(1) {
+    opacity: 100%;
+}
+
+.navigation * {
+    list-style-type: none;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 144px;
+    height: 32px;
+}
+
+.icons * {
+    cursor: pointer;
+}
+
+.stick {
+    width: 100%;
+    height: 1px;
+    ;
+    background-color: gainsboro !important;
+}
+
+.accordion-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 48px;
+    border-bottom: 0.5px solid #B5B5B5;
+}
+
+.accordion-top * {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 3%;
+    font-family: 'SF Pro Display';
+}
+
+.accordion {
+    margin: 18px;
+}
+
+.bread-crumbs {
+    width: 100%;
+    height: 104px;
+    display: flex;
+    align-items: center;
+    padding: 40px 160px;
+}
+
+.bread-crumbs ul {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.bread-crumbs ul li {
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'SF Pro Display', 'sans-serif';
+    color: #A4A4A4;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.bread-crumbs ul li:nth-child(3) {
+    color: #000000;
+}
+
+.bread-crumb {
+    width: 100%;
+    height: 104px;
+    display: flex;
+    align-items: center;
+    padding: 40px 160px;
+}
+
+.bread-crumb ul {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.bread-crumb ul li {
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'SF Pro Display', 'sans-serif';
+    color: #A4A4A4;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.bread-crumb ul li:nth-child(5) {
+    color: #000000;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.product {
+    width: 266.33px;
+    height: 432px;
+    border-radius: 9px;
+    background: #F6F6F6;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: 5px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.product h3{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    font-family: 'SF Pro Display';
+}
+
+.product p{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 3%;
+    text-align: center;
+    font-family: 'SF Pro Display';
+    margin-top: -20px;
+}
+
+.product button {
+    color: white;
+    width: 183px;
+    height: 48px;
+    border-radius: 8px;
+    background: black;
+    cursor: pointer;
+}
+
+.product *::selection{
+    background: none;
+}
+
+.product img {
+    width: 190px;
+    height: 190px;
+}
+
+.products-container{
+    display: flex;
+    align-items: center;
+    width: calc(276.33px * 3);
+    flex-wrap: wrap;
+    margin: 50px;
+    margin-top: 0px;
+}
+
+.top-part{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 815px;
+    height: 40px;
+    margin: 10px;
+}
+
+.products-inner-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer{
+    width: 100%;
+    height: 504px;
+    background: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-footer{
+    width: 80%;
+    height: 256px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo-text{
+    width: 384px;
+    height: 94.87px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.logo-text p{
+    font-family: 'SF Pro Display';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23.87px;
+    color: #CFCFCF;
+}
+
+.services{
+    width: 295.5px;
+    height: 256px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.services h3{
+    color: white;
+    font-family: 'SF Pro Display';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.services *{
+    color: #CFCFCF;
+    font-family: 'SF Pro Display';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 32px;
+}
+
+.text-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-image-container{
+    display: flex;
+    align-items: center;
+    margin-top: -75px;
+}
+
+.image-4{
+    display: flex;
+    flex-direction: column;
+}
+
+.image-4 img{
+    margin-bottom: 5px;
+    margin-right: -50px;
+    width: 80px;
+    height: 93px;
+}
+
+.image-4 img:hover{
+    border: 1px solid #B5B5B5;
+    border-radius: 5px;
+}
+
+.product-image{
+    width: 500px;
+    height: 516px;
+}
+
+.main-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.product-price{
+    display: flex;
+    width: 536px;
+    align-items: center;
+    gap: 16px;
+    height: 48px;
+}
+
+.product-title h1{
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+.product-title{
+    width: 536px;
+    height: 112px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-price h2{
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 3%;
+    font-weight: 500;
+}
+
+.info-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 368px;
+    width: 536px;
+    justify-content: space-between;
+}
+
+.select-colors{
+    width: 536px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin: 5px;
+}
+
+.select-colors h4{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+
+}
+
+.info {
+    width: 536px;
+    height: 672px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+    
+.select-color-view{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.select-color-view:hover{
+    border: 2px solid rgb(108, 108, 108);
+}
+
+.pr-color{
+    gap: 8px;
+    display: flex;
+}
+
+.tabs-memory{
+    width: 536px;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.tab{
+    width: 122px;
+    height: 48px;
+    border-radius: 8px;
+    border: 1px solid #D5D5D5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.tab:hover{
+    border: 1px solid rgb(108, 108, 108);
+}
+
+.tab p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #6F6F6F;
+    cursor: pointer;
+}
+
+.product-card-details{
+    width: 536px;
+    height: 144px;
+    gap: 16px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.details-card{
+    width: 168px;
+    height: 64px;
+    border-radius: 7px;
+    background: #F4F4F4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.details-card img{
+    width: 24px;
+    height: 24px;
+}
+
+.detail-card{
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-card p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #a7a7a7;
+}
+
+.detail-card span{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #4E4E4E;
+}
+
+.parf-text{
+    width: 536px;
+    height: 72px;
+}
+
+.parf-text p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 3%;
+    color: #6c6c6c;
+}
+
+.shop-card{
+    width: 260px;
+    height: 56px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+    transition: all 62.5ms ease-in-out;
+}
+
+.shop-card:hover{
+    transform: scale(1.02);
+}
+
+.product-shop-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.product-details-detail-container{
+    width: 100%;
+    height: 1144px;
+    padding: 80px 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FAFAFA;
+}
+
+
+.product-details-detail{
+    width: 1120px;
+    height: 984px;
+    border-radius: 8px;
+    background: #FFFFFF;
+    padding: 48px 40px;
+}
+
+.header-text{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.product-details-detail p {
+    font-size: 14px;
+    font-weight: medium;
+    line-height: 24px;
+    color: #9D9D9D;
+    margin: 32px 0;
+}
+
+.product-detail-content{
+    width: 1040px;
+    height: 616px;
+}
+
+.p-d-info-1{
+    width: 1040px;
+    height: 448px;
+    margin-bottom: 40px;
+}
+
+.p-d-info-1 h2{
+    font-size: 20px;
+    font-weight: medium;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.p-d-info-2{
+    width: 1040px;
+    height: 448px;
+}
+
+.p-d-info-2 h2{
+    font-size: 20px;
+    font-weight: medium;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.line{
+    width: 1040px;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.line-add{
+    width: 1040px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.line-2-1{
+    width: 1040px;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+}
